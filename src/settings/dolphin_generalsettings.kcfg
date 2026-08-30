@@ -72,7 +72,7 @@
         </entry>
         <entry name="HomeUrl" type="String">
             <label>Home URL</label>
-            <default code="true">QUrl::fromLocalFile(QDir::homePath()).toDisplayString(QUrl::PreferLocalFile)</default>
+            <default code="true">QUrl::fromLocalFile(qEnvironmentVariable("DOLPHIN_HOME")).toDisplayString(QUrl::PreferLocalFile)</default>
         </entry>
         <entry name="RememberOpenedTabs" type="Bool">
             <label>Remember open folders and tabs</label>
